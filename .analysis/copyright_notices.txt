@@ -1,0 +1,20 @@
+./DeclData/DeclNet/802Equ.a:; Copyright (C) 1989 by:
+./DeclData/DeclNet/802Equ.a:;	Apple Computer, Inc.
+./DeclData/DeclNet/Sonic/SonicEqu.a:;	Copyright (c) 1990 Apple Computer, Inc.
+./DeclData/DeclNet/AtalkMacros.a:;					<Copyright Years> [, <Engineering Suffix> [, <Version Label> ] ]
+./DeclData/DeclNet/AtalkMacros.a:						&sStage, &nRevision, &sCopyright, &sEngr='', &sLabel0=VersionInfo,&sLabel1=End
+./DeclData/DeclNet/AtalkMacros.a:			LCLC		&lCopyright
+./DeclData/DeclNet/AtalkMacros.a:	IF &SUBSTR(&sCopyright, 1, 1) = &CHR($27) THEN
+./DeclData/DeclNet/AtalkMacros.a:&lCopyright	SETC		&SUBSTR(&sCopyright, 2, &LEN(&sCopyright) - 2)
+./DeclData/DeclNet/AtalkMacros.a:&lCopyright	SETC		&sCopyright
+./Internal/C/DDEV.h:	Copyright Apple Computer, Inc.	 1989-90
+./Internal/C/TextUtilsPriv.h:	Copyright:	1993 by Apple Computer, Inc., all rights reserved.
+./Internal/C/CrsrDevPriv.h:		 <2>	 9/10/93	IH		Make it compile.  Correct Copyright date.
+./Internal/Asm/InternalOnlyEqu.a:;	of Apple Computer.  This is important!  
+./Internal/Asm/InternalOnlyEqu.a:;  *******    DO NOT RELEASE FOLLOWING EQUs TO OUTSIDE of Apple Computer *********
+./Internal/Asm/InternalOnlyEqu.a:;  **********  DO NOT RELEASE ANYTHING IN THIS FILE TO OUTSIDE of Apple Computer *******************
+./OS/TrapDispatcher/Dispatch.a:; Copyright Apple Computer, Inc. 1982-1988
+./OS/NetBoot/ATIncludes/ENETequ.a:; Copyright 1987 Apple Computer, Inc. All Rights Reserved
+./OS/NetBoot/ATIncludes/802Equ.a:; Copyright (C) 1989 by:
+./OS/NetBoot/ATIncludes/802Equ.a:;	Apple Computer, Inc.
+./OS/NetBoot/Hash/Hash.a:;	Copyright (c) Xerox Corporation 1989

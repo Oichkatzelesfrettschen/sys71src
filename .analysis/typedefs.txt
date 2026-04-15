@@ -1,0 +1,100 @@
+//            typedef enum { kRed = 1, kGreen = 2, kBlue = 3 } ColorComponent;
+typedef char              Int8;          // Signed 8-bit integer
+typedef short             Int16;         // Signed 16-bit integer
+typedef long              Int32;         // Signed 32-bit integer
+typedef unsigned char     UInt8;         // Unsigned 8-bit integer
+typedef unsigned short    UInt16;        // Unsigned 16-bit integer
+typedef unsigned long     UInt32;        // Unsigned 32-bit integer
+typedef float             Float32;      // Single-precision floating point
+typedef double            Float64;      // Double-precision floating point
+typedef Int8              *Int8Ptr, **Int8Handle;
+typedef Int16             *Int16Ptr, **Int16Handle;
+typedef Int32             *Int32Ptr, **Int32Handle;
+typedef UInt8             *UInt8Ptr, **UInt8Handle;
+typedef UInt16            *UInt16Ptr, **UInt16Handle;
+typedef UInt32            *UInt32Ptr, **UInt32Handle;
+typedef Float32           *Float32Ptr, **Float32Handle;
+typedef Float64           *Float64Ptr, **Float64Handle;
+typedef enum { kIsOk = false, kNotOk = true };
+typedef enum { kSuccess = 0, kFailure = -1 };                // Function return codes
+typedef struct VDDefMode VDDefMode;
+typedef VDDefMode *VDDefModePtr, **VDDefModeHandle;
+typedef struct SPRAMRecord SPRAMRecord;
+typedef SPRAMRecord *SPRAMRecordPtr, **SPRAMRecordHandle;
+typedef struct GammaTable GammaTable;
+typedef GammaTable *GammaTablePtr, **GammaTableHandle;
+typedef	struct	ACDCVidParms		ACDCVidParms;
+typedef	struct	ACDCVidParms		*ACDCVidParmsPtr;
+typedef	struct	ACDCVidParms		**ACDCVidParmsHdl;
+typedef	struct	endeavorVidParms		endeavorVidParms;
+typedef	struct	endeavorVidParms		*endeavorVidParmsPtr;
+typedef	struct	endeavorVidParms		**endeavorVidParmsHdl;
+typedef	struct	globals		globals;
+typedef	struct	globals		*globalsPtr;
+typedef	struct	globals		**globalsH;
+											 define/typedef/prototype sections.
+	Put #defines, typedefs, and prototypes for your utility routines here!
+typedef Ptr CCPtr;									/* Pointer to a Channel Command buffer */
+typedef struct dmaCC {
+typedef struct regCC {
+typedef pascal void (*DisposeProcPtr)(Handle handle, THz zone);
+typedef pascal void (*TrashNotificationProcPtr)(Ptr startAddr, Ptr endAddr);
+	typedef pascal void (*TrashNotificationProcPtr)(Ptr startAddr, Ptr endAddr);
+typedef struct SBTCB {
+typedef struct BTH {
+typedef struct ND {
+typedef struct STPR {
+typedef	STPR SBTPT[BTMaxDepth]; 		/* BTree path table */
+typedef struct xkr {
+typedef struct ext {
+typedef ext xdr[NumExts];			/* xdr = (3 extent entries) */
+typedef struct ckr {
+typedef struct cdr {
+typedef struct dir {
+typedef struct thd {
+typedef struct fil {
+typedef struct SDPR {
+typedef	SDPR SDPT[CMMaxDepth]; 		/* directory path table */
+typedef struct SVCB {
+typedef struct MDB {
+typedef struct SFCB {
+typedef struct ResourceMapRecord {
+typedef struct CRMToolContext {  		/* NOTE	if this structure changes,
+typedef struct ResFileRec {
+typedef struct CRMResourceCount {
+typedef struct CRMAppRec {
+typedef struct DispatchCode {
+typedef struct CTBBlock {
+typedef struct ChooseRec {
+typedef struct CellDataBlock {
+typedef struct NewCellDataBlock { /* Structure of new icon ldef's Data */
+typedef struct IconPrivateBlock {
+typedef struct TextState {
+typedef	struct	{
+typedef struct CoreRecord {				// looks pretty common to ConnRecord, TermRecord, FTRecord
+typedef struct DecoderInfo DecoderInfo;
+typedef struct ProductInfo ProductInfo;
+									Specifically, for the THz typedef, as well as for prototypes for
+		 <2>	 10/6/92	jrc		Changed "typedef struct" syntax to agree with Sean's
+									InterfaceTool.  Also changed "typedef enum".
+		 <7>	 9/30/92	ELE		change TCFLProcs from typedef to struct so CFLoader.h still not
+// typedefs that probably should be in some other system header
+typedef long  TaskID;
+typedef long  TeamID;
+typedef long  AddressSpaceID;
+typedef unsigned long LogicalAddress;     // the type used for addresses in address spaces
+typedef unsigned long TVersionNum;	/* Version number */
+typedef LogicalAddress FragConnectionID;  // the value interpreted only by the Frag
+typedef unsigned long Mask;               // for flags
+typedef unsigned char SymClass;           // for symbol class of export symbols
+typedef OSErr FragErr;
+typedef struct MemFragment MemFragment;
+typedef struct DiskFragment DiskFragment;
+typedef struct SegmentedFragment SegmentedFragment;
+typedef struct FragmentLocator FragmentLocator, *FragmentLocatorPtr;
+typedef FragErr (*FragSearchProcPtr) ( Str63             pNamePtr, 
+typedef struct RegisteredInfo RegisteredInfo;
+typedef struct ContextInfo ContextInfo;
+typedef struct ConnectionInfo ConnectionInfo;
+typedef struct SectionInfo SectionInfo;
+typedef long FragErrors;

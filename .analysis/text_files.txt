@@ -1,0 +1,30 @@
+./DeclData/DeclVideo/Sonora/Sonora Release Notes.txt
+./DeclData/DeclVideo/Civic/Civic Release Notes.txt
+./Internal/C/C Release Notes.txt
+./Internal/Pascal/Pascal Release Notes.txt
+./Internal/Asm/Asm Release Notes.txt
+./OS/OS Release Notes.txt
+./OS/Hardware_Information.txt
+./OS/StartMgr/StartMgr Release Notes.txt
+./OS/VDig/VDig Release Notes.txt
+./OS/HFS/Extensions/BTreeMgr/BTreeMgr Release Notes.txt
+./OS/HFS/Extensions/Extensions Release Notes.txt
+./OS/HFS/HFS Release Notes.txt
+./OS/SCSIMgr/SCSIMgr Release Notes.txt
+./OS/SCSIMgr4pt3/SCSIMgr4pt3 Release Notes.txt
+./OS/SCSIMgr4pt3/makefile.txt
+./OS/Keyboard/Keyboard Release Notes.txt
+./OS/PowerMgr/PowerMgr Release Notes.txt
+./OS/MemoryMgr/MemoryMgr Release Notes.txt
+./OS/Gestalt/Gestalt Release Notes.txt
+./OS/NubMgr/Cobalt.txt
+./OS/PPC/PPC Release Notes.txt
+./Libs/InterfaceSrcs/InterfaceSrcs Release Notes.txt
+./Libs/InterfaceSrcs/InnerPrintTraps.txt
+./Libs/MakeStandardLib.txt
+./LinkedPatches/LinkedPatches Release Notes.txt
+./Interfaces/AIncludes/AIncludes Release Notes.txt
+./Interfaces/PInterfaces/PInterfaces Release Notes.txt
+./Interfaces/CIncludes/CIncludes Release Notes.txt
+./Interfaces/RIncludes/RIncludes Release Notes.txt
+./Make/FeatureList.txt

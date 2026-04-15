@@ -1,0 +1,50 @@
+extern "C" {
+extern pascal void TMPeekLine(TermHandle hTerm, short lineNo, LineDataBlock *theLineData);
+extern pascal FTErr FTCleanup(FTHandle hFT, Boolean now);
+extern "C" {
+extern "C" {
+extern "C" {
+extern "C" {
+extern "C" {
+extern pascal short 	CMPChoose(ConnHandle *hConn, Point where, CMChooseRec *cRec);
+extern pascal void 		CMSetupXCleanup(short procID, Ptr theConfig, short count,
+extern pascal void		CMGetErrorString(ConnHandle hConn, short id, Str255 errMsg);
+extern pascal CMErr  	CMNewIOPB(ConnHandle hConn, CMIOPBPtr *theIOPB);
+extern pascal CMErr	 	CMDisposeIOPB(ConnHandle hConn, CMIOPBPtr theIOPB);
+extern pascal CMErr	 	CMPBRead(ConnHandle hConn, CMIOPBPtr theIOPB, Boolean async);
+extern pascal CMErr	 	CMPBWrite(ConnHandle hConn, CMIOPBPtr theIOPB, Boolean async);
+extern pascal CMErr	 	CMPBIOKill(ConnHandle hConn, CMIOPBPtr theIOPB);
+extern pascal CMErr	 	CMPBOpen(ConnHandle hConn, Boolean async);
+extern pascal CMErr	 	CMPBClose(ConnHandle hConn, Boolean async);
+extern pascal CMErr	 	CMPBListen(ConnHandle hConn, Boolean async);
+extern pascal CMErr	 	CMPBAccept(ConnHandle hConn, Boolean async, Boolean accept);
+extern pascal CMErr	 	CMListenPrep(ConnHandle hConn, Boolean async, ProcPtr completor,
+extern pascal CMErr	 	CMOpenPrep(ConnHandle hConn, Boolean async, ProcPtr completor,
+extern pascal void	 	CMConnectCleanup(ConnHandle hConn);
+extern pascal void TMPeekLine(TermHandle hTerm, short lineNo, LineDataBlock *theLineData);
+extern "C" {
+extern "C" {
+extern "C" {
+extern "C" {
+extern "C" {
+extern "C" {
+extern void myListener();	/* These are asm lang. code */
+extern QElemPtr DeQReqBuf(QHdr *quePtr,QElemPtr aptr);
+extern void processQueue();
+extern void processVBL();
+extern void delayMilSec(short);
+extern void readUserRecord();
+extern void	sendUserRecord();
+extern void closeUserRecord();
+extern void	readImage();
+extern void writeImage();
+extern void closeImage();
+extern void writeUserRecord();
+extern void sendUpdateReply();
+extern GlobalsPtr GetGPtr();			// returns ptr to above Globals
+extern pascal OSErr ATPBOpen(ParamBlockRec *pb,Boolean aSync); 	/* from ATBootUtil.a */
+extern int 		myGetA5();					/* return A5 */
+extern	void	mySetA5(int oldA5);			/* set A5 to the passed value */
+extern	void	go_rom(Ptr p);
+extern	void	do_erase();
+extern void	pdbzero(char *c,int length);

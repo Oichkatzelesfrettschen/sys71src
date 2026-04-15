@@ -1,0 +1,30 @@
+pascal void MoveHLow(Handle h)
+typedef pascal void (*DisposeProcPtr)(Handle handle, THz zone);
+typedef pascal void (*TrashNotificationProcPtr)(Ptr startAddr, Ptr endAddr);
+	typedef pascal void (*TrashNotificationProcPtr)(Ptr startAddr, Ptr endAddr);
+	pascal void TrashMemoryArea(Ptr startAddr, Ptr endAddr) =
+	pascal Boolean EnoughSystemHeapSlop(void) =
+		pascal THz InitProcessMgrHeap(THz processMgrZone)
+		pascal Size ShrinkSysHeap(Size cbNeeded)
+		pascal void LowerProcessMgrZoneBottom(Size cbLower, THz oldProcessMgrZone)
+		pascal Size ShrinkProcessMgrZone(Size sizeNeeded, THz processMgrZone)
+		pascal void ExtendSystemZone(Size sizeNeeded)
+		pascal void ReclaimSpaceIfSysHeapLow(Handle *theNewHandle, THz pmHeap)
+		pascal Size StraddleBlockSize(Size* lowPMStorage, Size* highSysStorage, Handle blockOfInterest, Boolean *sawInterestingBlock, THz pmHeap)
+		pascal Size ProcessMgrMaxBlock(THz processMgrZone)
+		pascal Size GetProcessMgrLoFreeBytes(Handle handleOfInterest, Boolean *sawInterestingBlock)
+		pascal Size GetSystemHiFreeBytes(void)
+		pascal Handle NewHandleHi(Size requestedSize)
+		pascal Ptr GetNextBlockInHeap(Ptr currentBlock, THz theZone)
+		pascal OSErr RegisterDisposeProc(DisposeProcPtr theProc, THz theZone)
+		pascal OSErr DisposeZone(THz theZone)
+		pascal OSErr SetZoneCompatibilityFlags(THz theZone, unsigned short flags)
+		pascal unsigned short GetZoneCompatibilityFlags(THz theZone)
+pascal short	CRMOpenRFPerm(ConstStr63Param fName, short vRefNum, long dirID);
+pascal short	CRMGetRFCount(short refNum);
+pascal OSErr	CRMParseRefNum(short refNum, Str63 fName, short *vRefNum);
+pascal OSErr	CRMCreateCommunications(short *vRefNum, long *dirID);
+pascal short	CRMCountFiles(OSType fType, short vRefNum, long dirID);
+pascal OSErr	CRMGetIndFile(Str63 fName, OSType fType, short vRefNum, long dirID, short index);
+pascal Boolean	CRMCheckTool(ConstStr63Param fName, OSType fType, short vRefNum, long dirID);
+pascal void		CRMDumpResChain(void);

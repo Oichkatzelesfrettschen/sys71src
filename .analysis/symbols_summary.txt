@@ -1,0 +1,100 @@
+$00	
+$00000008	equ
+$00000010	equ
+$00000020	equ
+$00000040	equ
+$00000080	equ
+$002C	equ
+$10	
+$1FDC	equ
+$20	
+$2024	equ
+$30	
+$40	
+$40s	
+$41	
+$80	
+$E0	equ
+_68KOpCodes_	d
+a	
+_A0_	e
+_A1_	e
+_A2_	e
+_A3_	e
+_A4_	e
+_A5_	e
+A5World	long
+_A6_	e
+_A7_	e
+abbrevDate	e
+abbrevDate	e
+abbrevDaysTableLength	\/*length of abbrev days table*\/$/;"
+abbrevDaysTableOffset	\/*offset in itl1 to abbrev days table*\/$/;"
+abbrevMonthsTableLength	\/*length of abbrev months table*\/$/;"
+abbrevMonthsTableOffset	\/*offset in itl1 to abbrev months table*\/$/;"
+abbrLen	
+ABByte	t
+ABCallType	t
+abOpcode	m
+abOpcode	m
+abOpcode	m
+abOpcode	m
+abort	
+abort	Boolean 
+AbortCommand	\/\/ <SM4>$/;"
+abortErr	
+abortFlag	Boolean
+ABORT	m
+abortOS	
+abortPB	SCSIAbortCommandPB abortPB;
+abortSCBPtr	
+aboutMeDLOG	aboutMeDLOG
+aboutMeItem	aboutMeItem
+ABP	
+ABProtoType	t
+ABPSckt	
+abResult	m
+abResult	m
+abResult	m
+abResult	m
+ABS	d
+ABS	d
+_ABS_	e
+abSize	
+abs	{ return cabs(a); }$/;"
+ABusDCE	
+abUserReference	m
+abUserReference	m
+abUserReference	m
+abUserReference	m
+ABusVars	
+__ACAM__	d
+ACancelNameChange	ACancelNameChange
+ACanclAskTask	ACanclAskTask
+accClear	e
+accCopy	e
+accCursor	e
+accCut	e
+acceleration	long
+accelPoints	Ptr
+acceptBlk	
+AcceptLocalSession	f
+AcceptNetworkConnection	f
+AcceptNetworkSession	f
+acceptParam	m
+accessAddress	
+Access	long Access;
+accessParam	m
+AccessParam	s
+AccessParam	t
+accEvent	e
+accMenu	e
+accPaste	e
+accRun	accRun
+accRun	e
+acCTable	
+accUndo	e
+ACDCVidParmsHdl	struct
+ACDCVidParmsPtr	struct
+ACDCVidParms	s
+ACDCVIDPARMSSIZE	ACDCVIDPARMSSIZE
